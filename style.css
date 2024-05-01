@@ -1,0 +1,120 @@
+:root {
+    --light-color: #E6E1DF;
+    --dark-color: #494546;
+}
+body{
+    background-color: var(--dark-color);
+    font-family: 'Montserrat', sans-serif;
+    color: var(--light-color);
+}
+
+.navbar-brand img {
+    max-width: 90%;
+    height: auto;
+}
+
+
+/*hero*/
+.background-image{
+    background-image: url('images/hero.jpg');
+    height: calc(100vh - 99.63px); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    position: relative;
+}
+.mask{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.hero-text{
+    text-align: center;
+    font-family: 'Cormorant Garamond', sans-serif;
+}
+.hero-text h1{
+    letter-spacing: 4px;
+    font-size: 60px;
+}
+.scroll-down{
+    font-size: 18px;
+}
+
+/*main section*/
+.main{
+    text-align: center;
+    color: var(--light-color);
+    
+    
+}
+.main img{
+    width: 100%;
+    height: auto;
+
+}
+.col-md-12{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*footer*/
+.table td {
+    text-align: center;
+   
+}
+
+/*events*/
+.events{
+    text-align: center;
+}
+.event-img{
+    height: 300px;
+    object-fit: cover; 
+    width: 100%;
+}
+/*contact*/
+.contact-img{
+    height: 600px;
+    width: auto;
+}
+
+/*order.php styles*/
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand img  {
+        width: 150px;
+    }
+    .contact-img-container{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        height: 100%;
+    }
+    .contact-img{
+        height: 500px;
+        margin-bottom: 12px;   
+    }
+    
+}
+@media (max-width: 992px){
+    .img-reservations{
+        width: 317.33px;
+        height: 440.33px;
+        margin-bottom: 12px;
+    }
+    .reservations-img-container{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        height: 100%;
+    }
+}
